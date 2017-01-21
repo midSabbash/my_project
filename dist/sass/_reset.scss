@@ -1,0 +1,77 @@
+body {
+  margin: 0 auto;
+  color: #333;
+  font: 14px/1  'Cabin', sans-serif;
+  background: #2e2d32;
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+/* General reset */
+img {
+  border: none;
+  max-width: 100%;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+}
+
+a:focus, a:active {
+  text-decoration: none;
+  outline: none;
+  color: #000;
+}
+
+a:hover {
+  color: rgba(3, 3, 3, .25);
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+input, button, textarea, select {
+  outline: none;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  &:hover, &:focus, &:active {
+    outline: none;
+  }
+}
+
+input, select, textarea {
+  border: none;
+  background: none;
+  box-sizing: border-box;
+}
+
+/// хром, сафари /
+body::-webkit-scrollbar { width: 0; }
+
+/// ie 10+ /
+.element { -ms-overflow-style: none; }
+
+/* фф (свойство больше не работает, других способов тоже нет)*/
+.element { overflow: -moz-scrollbars-none; }
+
