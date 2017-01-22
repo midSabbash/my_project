@@ -14,27 +14,27 @@ header {
   height: 100vh;
   position: fixed;
   z-index: 0;
-  -webkit-transition: .3s;
-  -moz-transition: .3s;
-  -ms-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s;
-  &.scale {
-    .container {
-      img {
-        box-shadow: 0 0 60px 25px rgb(35, 34, 39);
-      }
-    }
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+
+  img {
+    box-shadow: 0 0 60px 25px rgb(35, 34, 39);
   }
+
   .container {
     position: relative;
     width: 100%;
     height: 100vh;
+
     .made-by {
       position: absolute;
       top: 20px;
       left: 20px;
       z-index: 99;
+
       a {
         color: #fff;
         text-transform: uppercase;
@@ -51,6 +51,7 @@ header {
       bottom: 20px;
       left: 20px;
       z-index: 99;
+
       a {
         color: #fff;
         text-transform: uppercase;
@@ -61,11 +62,13 @@ header {
         }
       }
     }
+
     img {
       position: absolute;
       width: 100%;
       height: 100%;
     }
+
     .side {
       width: 40%;
       position: absolute;
@@ -76,6 +79,7 @@ header {
       display: flex;
       justify-content: center;
       align-items: center;
+
       p {
         color: #fff;
         font-size: 135px;
@@ -97,13 +101,16 @@ main {
   -ms-transition: transform 1s;
   -o-transition: transform 1s;
   transition: transform 1s;
+
   &.scale {
     padding-top: 3.5%;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
   }
-  &.fixed {
-    margin: 0;
-    position: fixed;
-  }
+
   .resume {
     height: 100%;
     background: #e2e2e2;
@@ -127,6 +134,7 @@ footer {
       width: 100%;
       height: 100%;
     }
+
     .examples {
       position: absolute;
       top: 0;
@@ -138,6 +146,7 @@ footer {
       align-content: space-around;
       color: #fff;
       padding: 60px;
+
       .example {
         width: 33.3333%;
         padding: 0 50px;
@@ -156,11 +165,13 @@ footer {
           display: inline-block;
           width: 100%;
           position: relative;
+
           img {
             width: 100%;
             height: auto;
             margin-bottom: -3px;
           }
+
           p {
             position: absolute;
             text-align: center;
@@ -172,6 +183,7 @@ footer {
             opacity: 0;
           }
         }
+
         .git {
           position: absolute;
           top: 10%;
@@ -188,16 +200,19 @@ footer {
             color: #5ff8fb;
           }
         }
+
         &:hover {
           a:first-child {
             img {
               opacity: 0.2;
             }
+
             p {
               transform: translateY(0);
               opacity: 1;
             }
           }
+
           .git {
             transform: translateY(0);
             opacity: 1;
